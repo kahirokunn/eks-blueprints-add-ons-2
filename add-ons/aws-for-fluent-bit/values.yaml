@@ -1,11 +1,22 @@
 aws-for-fluent-bit:
+  resources:
+    limits:
+      memory: 1Gi
+    requests:
+      cpu: 50m
+      memory: 500Mi
+
   serviceAccount:
     create: false
 
   cloudWatch:
+    enabled: true
 
   firehose:
+    enabled: false
 
   kinesis:
+    enabled: false
 
   elasticsearch:
+    enabled: false
