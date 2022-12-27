@@ -1,3 +1,4 @@
 aws-cloudwatch-metrics:
   serviceAccount:
     create: false
+  containerdSockPath: /run/dockershim.sock
